@@ -1,7 +1,6 @@
 package com.users.web;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.orm.jpa.EntityScan;
 import org.springframework.context.annotation.Bean;
@@ -13,15 +12,16 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import static springfox.documentation.builders.PathSelectors.regex;
+
 @SpringBootApplication
 @EnableSwagger2
 @ComponentScan(basePackages = "com.users")
-@EnableAutoConfiguration
 @EntityScan(basePackages = "com.users.entity")
 @EnableJpaRepositories(basePackages = "com.users.repository")
 public class AppConfig {
 
-    public static void main(final String[] args) {
+    public static void main(String[] args) {
         SpringApplication.run(AppConfig.class, args);
     }
 
@@ -30,7 +30,7 @@ public class AppConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.any())
-                .paths(PathSelectors.any())
+                .paths(regex("/users.*"))
                 .build();
     }
 }
