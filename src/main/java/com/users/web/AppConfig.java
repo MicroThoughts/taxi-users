@@ -1,8 +1,5 @@
-package com.base.web;
+package com.users.web;
 
-import com.base.entity.User;
-import com.base.repository.UserRepository;
-import com.base.service.UserService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,10 +15,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-@ComponentScan(basePackages = "com.base")
+@ComponentScan(basePackages = "com.users")
 @EnableAutoConfiguration
-@EntityScan(basePackages = "com.base.entity")
-@EnableJpaRepositories(basePackages = "com.base.repository")
+@EntityScan(basePackages = "com.users.entity")
+@EnableJpaRepositories(basePackages = "com.users.repository")
 public class AppConfig {
 
     public static void main(final String[] args) {

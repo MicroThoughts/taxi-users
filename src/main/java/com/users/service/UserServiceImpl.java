@@ -1,7 +1,7 @@
-package com.base.service;
+package com.users.service;
 
-import com.base.entity.User;
-import com.base.repository.UserRepository;
+import com.users.entity.User;
+import com.users.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

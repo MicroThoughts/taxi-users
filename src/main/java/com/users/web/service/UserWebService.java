@@ -1,8 +1,8 @@
-package com.base.web.service;
+package com.users.web.service;
 
 
-import com.base.entity.User;
-import com.base.service.UserService;
+import com.users.entity.User;
+import com.users.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
