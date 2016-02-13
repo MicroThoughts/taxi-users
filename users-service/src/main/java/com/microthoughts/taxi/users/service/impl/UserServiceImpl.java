@@ -1,6 +1,7 @@
 package com.microthoughts.taxi.users.service.impl;
 
-import com.base.repository.UserRepository;
+import com.microthoughts.taxi.users.dao.UserRepository;
+import com.microthoughts.taxi.users.model.User;
 import com.microthoughts.taxi.users.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,8 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class UserServiceImpl implements UserService
-{
+public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;

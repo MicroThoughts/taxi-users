@@ -1,7 +1,7 @@
 package com.microthoughts.taxi.users.api;
 
 
-import com.base.entity.User;
+import com.microthoughts.taxi.users.model.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +10,7 @@ import java.util.List;
 
 @Api(value = "/users", description = "User Service")
 @RestController
-public interface UserServiceAPI
+public interface UserServiceApi
 {
     @ApiOperation(value = "Create user")
     @RequestMapping(value = "/users", method = RequestMethod.POST)

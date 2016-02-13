@@ -1,4 +1,6 @@
 dependencies {
     compile project(':users-dao')
-    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    compile 'org.springframework:spring-beans'
+    compile 'org.springframework:spring-context'
 }

@@ -1,17 +1,15 @@
 package com.microthoughts.taxi.users.impl;
 
-
-import com.base.entity.User;
-import com.base.service.UserService;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+import com.microthoughts.taxi.users.api.UserServiceApi;
+import com.microthoughts.taxi.users.model.User;
+import com.microthoughts.taxi.users.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@Api(value = "/users", description = "User Service")
 @RestController
-public class UserWebService implements UserServiceAPI
+public class UserWebService implements UserServiceApi
 {
     @Autowired
     private UserService userService;

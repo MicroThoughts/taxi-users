@@ -1,5 +1,7 @@
 package com.microthoughts.taxi.users.service;
 
+import com.microthoughts.taxi.users.model.User;
+
 import java.util.List;
 
 public interface UserService {

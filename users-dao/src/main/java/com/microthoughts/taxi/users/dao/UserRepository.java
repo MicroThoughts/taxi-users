@@ -1,6 +1,7 @@
 package com.microthoughts.taxi.users.dao;
 
-import com.base.entity.User;
+
+import com.microthoughts.taxi.users.model.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
