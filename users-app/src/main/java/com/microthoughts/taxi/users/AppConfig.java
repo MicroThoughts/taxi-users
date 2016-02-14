@@ -15,10 +15,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-@ComponentScan(basePackages = "com.base")
+@ComponentScan(basePackages = "com.microthoughts.taxi.users")
 @EnableAutoConfiguration
-@EntityScan(basePackages = "com.base.entity")
-@EnableJpaRepositories(basePackages = "com.base.repository")
+@EntityScan(basePackages = "com.microthoughts.taxi.users.model")
+@EnableJpaRepositories(basePackages = "com.microthoughts.taxi.users.dao")
 public class AppConfig
 {
 
